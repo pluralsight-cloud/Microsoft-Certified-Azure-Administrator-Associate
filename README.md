@@ -12,3 +12,4 @@ Files meant to supplement the learning journey for the AZ-104 exam.
 
 [Pluralsight]()
 
+None of this code is intended for production use. These examples are made to highlight REQUEST and RESPONSE objects for the Kubernetes admission review API and are for educational use.
