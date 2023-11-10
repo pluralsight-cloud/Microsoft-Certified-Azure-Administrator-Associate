@@ -1,12 +1,12 @@
+param location string = resourceGroup().location
 param webAppName string
 
 var appServicePlanName = 'AppServicePlan-${webAppName}'
 var sku = 'S1'
 var linuxFxVersion = 'php|7.4'
-var location = resourceGroup().location
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2022-03-01' = {
-  name: appServicePlanName
+  name: 'AwesomeAppServicePlan'
   location: location
   sku: {
     name: sku
