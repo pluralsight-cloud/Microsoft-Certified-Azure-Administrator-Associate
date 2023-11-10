@@ -1,7 +1,6 @@
 param location string = resourceGroup().location
 param webAppName string
 
-var appServicePlanName = 'AppServicePlan-${webAppName}'
 var sku = 'S1'
 var linuxFxVersion = 'php|7.4'
 
