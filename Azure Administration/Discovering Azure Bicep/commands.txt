@@ -1,0 +1,15 @@
+# Open Cloud Shell editor
+
+code .
+
+# Save Resource Group information to PowerShell variable
+
+$rg = Get-AzResourceGroup
+
+# Deploy to a Resource Group using Azure PowerShell
+
+New-AzResourceGroupDeployment `
+  -Name <deployment_name> `
+  -ResourceGroupName $rg.ResourceGroupName `
+  -TemplateFile <file_name>.bicep
+  
