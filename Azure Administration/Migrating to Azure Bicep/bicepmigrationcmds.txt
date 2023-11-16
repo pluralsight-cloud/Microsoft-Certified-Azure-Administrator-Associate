@@ -1,0 +1,23 @@
+# Display az bicep help page
+
+az bicep --help
+
+# Manually convert Bicep file to ARM template
+
+az bicep build --file <file_name>.bicep
+
+# Convert ARM Template to Bicep file
+
+az bicep decompile --file <file_name>.json
+
+# Create variable to query resource group name (used in a demo scenario with only one Resource Group)
+
+rgName=$(az group list --query "[].name" -o tsv)
+
+# Deploy Bicep file using Azure CLI
+
+az deployment group create --name <deployment_name> --resource-group $rgName --template-file <file_name>.bicep
+
+# List resources in Resource Group
+
+az resource list --resource-group $rgName --output table
