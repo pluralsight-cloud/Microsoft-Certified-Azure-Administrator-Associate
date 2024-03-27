@@ -1,0 +1,1 @@
+Course Files for the Microsoft Certified: Azure Administrator Associate (AZ-104) - Implement and Manage Storage Section
